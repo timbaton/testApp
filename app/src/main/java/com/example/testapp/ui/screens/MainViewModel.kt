@@ -8,7 +8,7 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val signInUseCase: SignInUseCase) : ViewModel() {
 
-    fun signIng(login: String, password: String) {
+    fun signIn(login: String, password: String) {
         viewModelScope.launch {
             signInUseCase.invoke(SignIn(login, password))
         }

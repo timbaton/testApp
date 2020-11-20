@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initViews() {
         btnEnter.setOnClickListener {
-            mainViewModel.signIng(etLogin.text.toString(), etPassword.text.toString())
+            mainViewModel.signIn(etLogin.text.toString(), etPassword.text.toString())
         }
     }
 }
